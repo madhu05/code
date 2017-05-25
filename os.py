@@ -37,7 +37,7 @@ play_src = dict(
                 dict(name="Gather facts about all ports", action=dict(module="os_port_facts", auth=dict(auth_url="http://192.168.20.208:5000/v2.0",
                 username="admin", password="cnetopenstack", project_name="admin"))),
 
-                dict(name="Show openstack ports", action=dict(module="debug", var="openstack_ports"))]
+                dict(name="Show openstack ports", action=dict(module="debug", var="openstack_ports")),
 
                 dict(name="Gather facts about previously created routers", action=dict(module="os_routers_facts", auth=dict(auth_url="http://192.168.20.208:5000/v2.0",
                 username="admin", password="cnetopenstack", project_name="admin"))),
